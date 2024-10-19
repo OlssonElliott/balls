@@ -1,14 +1,13 @@
-export function playerControls(){
-
-    const ball = document.createElement("div");
-    ball.id = "ball";
-    root.appendChild(ball);
-    
     //ball position
     let posX = 30;
     let posY = 30;
 
-    
+export function playerControls(root){
+
+    const ball = document.createElement("div");
+    ball.id = "ball";
+    root.appendChild(ball);
+
     //update ball position
     function updatePosition(){
         ball.style.left = posX + "px";
@@ -76,5 +75,17 @@ export function playerControls(){
         }
         });
 
+
+
 }
 
+
+//getters
+//getX
+export function getposX(){
+    return posX;
+}
+//getY
+export function getposY(){
+    return posY;
+}

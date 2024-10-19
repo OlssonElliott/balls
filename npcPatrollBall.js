@@ -1,4 +1,4 @@
-export function npcPatrollBall(){
+export function npcPatrollBall(root){
     const npcs = document.createElement("div");
     npcs.id = "npcPatrollBall";
     
