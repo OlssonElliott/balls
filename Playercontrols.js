@@ -1,4 +1,4 @@
-function playerControls(){
+export function playerControls(){
 
     const ball = document.createElement("div");
     ball.id = "ball";
@@ -58,7 +58,7 @@ function playerControls(){
     
     //stop moving
     document.addEventListener("keyup", (e) => {
-        tangent = e.key;
+       const tangent = e.key;
         
         switch (tangent) {
             case "w":
