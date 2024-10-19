@@ -1,0 +1,52 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+JS script mall
+
+const ball = document.getElementById('ball');
+let ballSpeed = 10;
+
+window.addEventListener('keydown', (event) => {
+  const ballRect = ball.getBoundingClientRect();
+  switch(event.key) {
+    case 'ArrowUp':
+      if (ballRect.top > 0) {
+        ball.style.top = ballRect.top - ballSpeed + 'px';
+      }
+      break;
+    case 'ArrowDown':
+      if (ballRect.bottom < window.innerHeight) {
+        ball.style.top = ballRect.top + ballSpeed + 'px';
+      }
+      break;
+    case 'ArrowLeft':
+      if (ballRect.left > 0) {
+        ball.style.left = ballRect.left - ballSpeed + 'px';
+      }
+      break;
+    case 'ArrowRight':
+      if (ballRect.right < window.innerWidth) {
+        ball.style.left = ballRect.left + ballSpeed + 'px';
+      }
+      break;
+  }
+});

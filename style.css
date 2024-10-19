@@ -1,0 +1,17 @@
+#ball {
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border-radius: 50%;
+    
+
+}
+
+#npcs{
+    background-color: greenyellow;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border-radius: 50%;
+}
