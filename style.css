@@ -27,3 +27,37 @@ body{
     position: absolute;
     border-radius: 50%;
 }
+
+#GameOverText{
+    color: red;
+    position: fixed;
+    font-size: 100px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    text-shadow: 
+    1px 1px 0 black, 
+    -1px 1px 0 black,  
+    1px -1px 0 black,  
+    -1px -1px 0 black; 
+}
+
+#SubGameOverText{
+    color: red;
+    position: fixed;
+    font-size: 30px;
+    left: 50%;
+    top: 58%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    text-shadow: 
+    1px 1px 0 black, 
+    -1px 1px 0 black,  
+    1px -1px 0 black,  
+    -1px -1px 0 black; 
+}

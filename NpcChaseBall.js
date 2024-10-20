@@ -1,15 +1,16 @@
 import { getposX, getposY } from "./Playercontrols.js";
-export function npcChaseBall(root){
+let npcX = 300;
+let npcY = 300;
 
+export function npcChaseBall(root){
     const myChaseBall = document.createElement("div");
     myChaseBall.id = "npcChaseBall";
     root.appendChild(myChaseBall);
+    
 
-    let npcX = 200;
-    let npcY = 200;
     let originX = npcX;
     let originY = npcY;
-    let npcStepDistance = 5;
+    let npcStepDistance = 2;
     
     
     function updateNpc(){
@@ -29,11 +30,16 @@ export function npcChaseBall(root){
         else  if (npcY > playerPosY){npcY -= npcStepDistance;}
         updateNpc();
     }
-
-
     //rörelseintervall
-    setInterval(npcChaseMovement, 20);
+    setInterval(npcChaseMovement, 10);
 
-
-    
 }
+
+export function getChaseNpcX(){
+    return npcX;
+}
+
+export function getChaseNpcY(){
+    return npcY;
+}
+

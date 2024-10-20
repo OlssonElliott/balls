@@ -3,7 +3,6 @@ export function npcPatrollBall(root){
     npcs.id = "npcPatrollBall";
     
     root.appendChild(npcs);
-    
     let npcX = 500;
     let npcY = 500;
     let originX = npcX;
@@ -18,7 +17,7 @@ export function npcPatrollBall(root){
     
     
     function npcMovement(){
-        let stepDistance = 5;
+        let stepDistance = 2;
         let patrolDistance = 200;
 
 
@@ -42,6 +41,6 @@ export function npcPatrollBall(root){
         }
         updateNpc();
     }
-    setInterval(npcMovement, 20);
+    setInterval(npcMovement, 10);
 }
 
